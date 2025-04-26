@@ -10,8 +10,8 @@ public class Datos_Tickets extends Gestion_Tickets{
     private String Descripcion_sobre_el_Ticket;
     private String Estado_Ticket;
 
-    public Datos_Tickets(String departamento, String empresa, String nivel_De_prioridad, String nombre, int cantidad_Disponible, String fecha_de_Creacion, String fecha_de_Vencimiento, String notas, String descripcion_sobre_el_Ticket, String estado_Ticket) {
-        super(departamento, empresa, nivel_De_prioridad);
+    public Datos_Tickets(String departamento, String empresa, String nivel_De_prioridad, String codigo_ticket, String nombre, int cantidad_Disponible, String fecha_de_Creacion, String fecha_de_Vencimiento, String notas, String descripcion_sobre_el_Ticket, String estado_Ticket) {
+        super(departamento, empresa, nivel_De_prioridad, codigo_ticket);
         this.Nombre = nombre;
         this.Cantidad_Disponible = cantidad_Disponible;
         this.Fecha_de_Creacion = fecha_de_Creacion;
@@ -75,6 +75,10 @@ public class Datos_Tickets extends Gestion_Tickets{
 
     public void setEstado_Ticket(String estado_Ticket) {
         Estado_Ticket = estado_Ticket;
+    }
+
+    public String getCodigo() {
+        return getCodigo_ticket(); // Llamada al getter de la clase padre
     }
 
 

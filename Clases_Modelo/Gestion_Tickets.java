@@ -5,11 +5,13 @@ public class Gestion_Tickets {
     private String Departamento;
     private String Empresa;
     private String Nivel_De_prioridad;
+    private String codigo_ticket;
 
-    public Gestion_Tickets(String departamento, String empresa, String nivel_De_prioridad) {
+    public Gestion_Tickets(String departamento, String empresa, String nivel_De_prioridad, String codigo_ticket) {
         this.Departamento = departamento;
         this.Empresa = empresa;
         this.Nivel_De_prioridad = nivel_De_prioridad;
+        this.codigo_ticket = codigo_ticket;
     }
 
     public String getDepartamento() {
@@ -36,5 +38,12 @@ public class Gestion_Tickets {
         Nivel_De_prioridad = nivel_De_prioridad;
     }
 
+    public String getCodigo_ticket() {
+        return codigo_ticket;
+    }
+
+    public void setCodigo_ticket(String codigo_ticket) {
+        this.codigo_ticket = codigo_ticket;
+    }
 
 }//FIN DEL PROGRAMA
